@@ -1,0 +1,565 @@
+TGlucoseMonitor
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Info.plist GluoseMonitor/GlucoseMonitor-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist
+cDataModelVersionCompile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GluoseMonitor.xcdatamodeld
+cProcessPCH /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.pth GluoseMonitor/GlucoseMonitor-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
+c000000004F453DF20000000000000110
+t1329937906
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist
+c000000004F639E0100000000000001A7
+t1331928577
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+c000000004F639E0100000000000001E5
+t1331928577
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004F639E02000000000026B2A0
+t1331928578
+s2536096
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F639E0200000000003AE430
+t1331928578
+s3859504
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F639E02000000000052C940
+t1331928578
+s5425472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004F639E030000000000175AA0
+t1331928579
+s1530528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F639E040000000000798EA0
+t1331928580
+s7966368
+
+N/Users/michaeltoth/Documents/GluoseMonitor/Default.png
+c000000004F906C190000000000008361
+t1334864921
+s33633
+
+N/Users/michaeltoth/Documents/GluoseMonitor/Default@2x.png
+c000000004F84F88F0000000000019360
+t1334114447
+s103264
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/DefaultIcon.png
+c000000004F84F56C0000000000000ABA
+t1334113644
+s2746
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m
+c000000004F7E73E10000000000003EA3
+t1333687265
+s16035
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m
+c000000004F7E750C00000000000062C1
+t1333687564
+s25281
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.m
+c000000004F7E750B0000000000000198
+t1333687563
+s408
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m
+c000000004F7E73E10000000000000163
+t1333687265
+s355
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.m
+c000000004F7E7616000000000000022C
+t1333687830
+s556
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m
+c000000004F8B82320000000000001C1F
+t1334542898
+s7199
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m
+c000000004F9066F20000000000006E0B
+t1334863602
+s28171
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m
+c000000004F8740050000000000003DCC
+t1334263813
+s15820
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GlucoseMonitor-Prefix.pch
+c000000004F7E480A000000000000016B
+t1333676042
+s363
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GluoseMonitor.xcdatamodeld
+c000000004F838C0C0000000000000088
+t1334021132
+s136
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m
+c000000004F83C1B20000000000000185
+t1334034866
+s389
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/en.lproj/InfoPlist.strings
+c000000004F7E480A000000000000002D
+t1333676042
+s45
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/en.lproj/MainStoryboard.storyboard
+c000000004F873BC10000000000004D55
+t1334262721
+s19797
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/flare.png
+c000000004F83E9A00000000000013C41
+t1334045088
+s80961
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/iTunesArtwork
+c000000004F84F3B4000000000000F5F1
+t1334113204
+s62961
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/libCorePlot-CocoaTouch.a
+c000000004F42CA1C00000000004A3FB0
+t1329777180
+s4865968
+
+N/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.m
+c000000004F7E480A0000000000000160
+t1333676042
+s352
+
+N/Users/michaeltoth/Documents/GluoseMonitor/Icon.png
+c000000004F84F56C0000000000000ABA
+t1334113644
+s2746
+
+N/Users/michaeltoth/Documents/GluoseMonitor/Icon@2x.png
+c000000004F84F62D0000000000002C05
+t1334113837
+s11269
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor.xcent
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GlucoseMonitor.LinkFileList
+c000000004F914210000000000000059D
+t1334919696
+s1437
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app.dSYM
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Default.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Default@2x.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/DefaultIcon.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Icon.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Icon@2x.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Info.plist
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/PkgInfo
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/default.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/flare.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/glucoseicon57x57.png
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/iTunesArtwork
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/libgsllib.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/michaeltoth/Documents/GluoseMonitor/default.png
+c000000004F906C190000000000008361
+t1334864921
+s33633
+
+N/Users/michaeltoth/Documents/GluoseMonitor/glucoseicon57x57.png
+c000000004F84F56C0000000000000ABA
+t1334113644
+s2746
+
+N/Users/michaeltoth/Library/MobileDevice/Provisioning Profiles/64C30237-1240-4CF7-856B-93BAEE0D3498.mobileprovision
+c000000004F9068D40000000000001BE9
+t1334864084
+s7145
+
+N/var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.pth
+t2
+s0
+
+NGluoseMonitor/GlucoseMonitor-Info.plist
+c000000004F90771C000000000000057B
+t1334867740
+s1403
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies60234d8a7941b541^65e246907941b541^---0#1#0#--18"Check dependencies36"F4B95F5A-9169-49F9-9AAD-DBCE87788954-
+
+CCodeSign /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app
+r0
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251403
+e356612503.629438
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m499d40967941b541^2d23a1977941b541^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m0000000000000000^3878"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.o GluoseMonitor/ECCommon.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECCommon.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECCommon.o36"E28EE597-8944-4A4B-9E81-1E30A4C45B4B-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251432
+e356612503.633009
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m28b840967941b541^cbbdb4977941b541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m0000000000000000^3872"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.o GluoseMonitor/ECGraph.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraph.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraph.o36"1ED367EB-802E-4B6B-B406-6FF98416A330-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251484
+e356612503.225372
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.ma4c240967941b541^98c039977941b541^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.m0000000000000000^3896"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.o GluoseMonitor/ECGraphItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphItem.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphItem.o36"839F5750-C344-45B9-B700-270AAC38EAEB-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.957052
+e356612503.225352
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m1a33f5967941b541^6bbb39977941b541^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m0000000000000000^3896"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.o GluoseMonitor/ECGraphLine.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphLine.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphLine.o36"424FEBFE-A439-48BE-9245-9285AC08D031-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612503.226618
+e356612503.319106
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.mb7253a977941b541^eab151977941b541^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.m0000000000000000^3902"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.o GluoseMonitor/ECGraphPoint.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/ECGraphPoint.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/ECGraphPoint.o36"6F4958F0-0B37-4293-8CDB-6590F1200EAD-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251301
+e356612504.302292
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m73be40967941b541^ae664d987941b541^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m0000000000000000^3908"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.o GluoseMonitor/GMAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMAppDelegate.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMAppDelegate.o36"1FA36045-E207-41D8-BE58-6EC3EB7FE61A-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251375
+e356612505.910531
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m4dbb40967941b541^8b19e9997941b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m0000000000000000^3962"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.o GluoseMonitor/GMDetailViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMDetailViewController.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMDetailViewController.o36"815970FC-760A-4A38-AE61-D8C28FEAF52A-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251310
+e356612504.514595
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m64b240967941b541^a9be83987941b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m0000000000000000^3962"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.o GluoseMonitor/GMMasterViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GMMasterViewController.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GMMasterViewController.o36"7205386C-8620-4D78-BBEB-70DE079EB68C-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612503.226636
+e356612503.319127
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m083a3a977941b541^38bf51977941b541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m0000000000000000^3872"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.o GluoseMonitor/Reading.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/Reading.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/Reading.o36"FED050B6-0C0F-4A32-9FFA-F6B2D80E0E0E-
+
+CCompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.o /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612502.251138
+e356612503.225339
+r1
+xCompileC
+xbuild/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.o
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.mcba240967941b541^1cb239977941b541^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.m0000000000000000^3854"CompileC build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.o GluoseMonitor/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch -MMD -MT dependencies -MF /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/main.m -o /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/main.o36"4BA925A3-DB40-4405-9B01-098C2DF1BAFD-
+
+CCompileStoryboard /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/en.lproj/MainStoryboard.storyboard
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Default.png Default.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Default@2x.png Default@2x.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/DefaultIcon.png GluoseMonitor/DefaultIcon.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Icon.png Icon.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Icon@2x.png Icon@2x.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/default.png default.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/flare.png GluoseMonitor/flare.png
+r0
+
+CCopyPNGFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/glucoseicon57x57.png glucoseicon57x57.png
+r0
+
+CCopyStringsFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/en.lproj/InfoPlist.strings GluoseMonitor/en.lproj/InfoPlist.strings
+r0
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist
+s356612496.351641
+e356612496.356329
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist
+xbuild/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist30295a907941b541^3f385b907941b541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist000000000080d041^1332"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app36"95A2F4D5-F0DB-4E62-AB5D-61033D42A7C4-
+
+CCpResource GluoseMonitor/iTunesArtwork build/Release-iphoneos/GlucoseMonitor.app/iTunesArtwork
+r0
+
+CDataModelVersionCompile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GluoseMonitor.xcdatamodeld
+s356612496.366400
+e356612502.955729
+r1
+xDataModelVersionCompile
+x/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd
+x/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GluoseMonitor.xcdatamodeld
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"DataModelVersionCompile build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd GluoseMonitor/GluoseMonitor.xcdatamodeld73846c907941b541^50abf4967941b541^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GluoseMonitor.xcdatamodeld/0000000000000000^1242"DataModelVersionCompile build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd GluoseMonitor/GluoseMonitor.xcdatamodeld    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GluoseMonitor.xcdatamodeld /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GluoseMonitor.momd36"8C07F2B4-9D69-401B-AAB0-E2C6B82FA5F8-
+
+CGenerateDSYMFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app.dSYM /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor
+r0
+
+CLd /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor normal armv7
+s356612505.918500
+e356612506.055315
+r0
+xLd
+x/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor
+xnormal
+xarmv7
+old: library not found for -lgsllib
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Link /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor4a60eb997941b541^8a200e9a7941b541^-115"ld: library not found for -lgsllibclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@30"Library not found for -lgsllib-356612506#0#35#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-356612506#35#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#0#--1741"Ld build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor normal armv7    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -L/Users/michaeltoth/Downloads/gsl-1.15/.libs -L/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -filelist /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/Objects-normal/armv7/GlucoseMonitor.LinkFileList -dead_strip -Objc -all_load -fobjc-arc -miphoneos-version-min=5.1 -lgsllib -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreData -lCorePlot-CocoaTouch -o /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/GlucoseMonitor36"80DEF9A4-607C-4211-B81C-2C7085227A6A-
+
+CProcessInfoPlistFile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Info.plist GluoseMonitor/GlucoseMonitor-Info.plist
+s356612496.351637
+e356612496.357746
+r1
+xProcessInfoPlistFile
+x/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Info.plist
+xGluoseMonitor/GlucoseMonitor-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Process GluoseMonitor/GlucoseMonitor-Info.plist20295a907941b541^81955b907941b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GlucoseMonitor-Info.plist0000000000000000^1258"ProcessInfoPlistFile build/Release-iphoneos/GlucoseMonitor.app/Info.plist GluoseMonitor/GlucoseMonitor-Info.plist    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    builtin-infoPlistUtility GluoseMonitor/GlucoseMonitor-Info.plist -genpkginfo /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/ResourceRules.plist -o /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/Info.plist36"EC8CAF34-9DE8-459F-8D52-C1AF26758E4D-
+
+CProcessPCH /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.pth GluoseMonitor/GlucoseMonitor-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356612496.366444
+e356612502.243266
+r1
+xProcessPCH
+x/var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.pth
+xGluoseMonitor/GlucoseMonitor-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Precompile GluoseMonitor/GlucoseMonitor-Prefix.pchfd836c907941b541^b7443e967941b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GlucoseMonitor-Prefix.pch0000000000000000^3916"ProcessPCH /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.pth GluoseMonitor/GlucoseMonitor-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/michaeltoth/Documents/GluoseMonitor    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/lib/postgresql83/bin:/Applications/MAMP/Library/bin:/opt/local/bin:/opt/local/sbin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/michaeltoth/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/michaeltoth/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/sw/bin:/sw/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/X11R6/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-conversion -Wno-sign-conversion -mthumb "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-generated-files.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-own-target-headers.hmap -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-all-target-headers.hmap -iquote /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor-project-headers.hmap -iquote/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/include -I/Users/michaeltoth/Documents/gsl-1.15/multifit -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources/armv7 -I/Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/DerivedSources -F/Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 --serialize-diagnostics /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.dia -c /Users/michaeltoth/Documents/GluoseMonitor/GluoseMonitor/GlucoseMonitor-Prefix.pch -o /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/49/73qydhh95lj0q13n8qfyg_nm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlucoseMonitor-Prefix-apldfbbfjisjoigugqphxiysfsqa/GlucoseMonitor-Prefix.pch.d36"9AA702DC-7A90-4F23-8260-EBA7FEE50121-
+
+CProcessProductPackaging "/Users/michaeltoth/Library/MobileDevice/Provisioning Profiles/64C30237-1240-4CF7-856B-93BAEE0D3498.mobileprovision" /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist /Users/michaeltoth/Documents/GluoseMonitor/build/GlucoseMonitor.build/Release-iphoneos/GlucoseMonitor.build/GlucoseMonitor.xcent
+r0
+
+CTouch /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app
+r0
+
+CValidate /Users/michaeltoth/Documents/GluoseMonitor/build/Release-iphoneos/GlucoseMonitor.app
+r0
+
