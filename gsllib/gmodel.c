@@ -3,17 +3,19 @@
 //  GlucoseMonitor
 //
 //  Created by Michael Toth on 5/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Michael Toth. All rights reserved.
 //
-//#import <UIKit/UIKit.h>
+
 #include <stdio.h>
 #include "gsl_vector.h"
 #include "gsl_matrix.h"
 #include <math.h>
+
 /* gmodel.c -- model functions for glucose level */
 
 #include "gmodel.h"
 
+// returns function values
 int
 gmodel_f (const gsl_vector * x, void *data, 
         gsl_vector * f)
@@ -42,20 +44,14 @@ gmodel_f (const gsl_vector * x, void *data,
     return GSL_SUCCESS;
 }
 
+// returns the derivatives
 int
 gmodel_df (const gsl_vector * x, void *data, 
          gsl_matrix * J)
 {
     size_t n = ((struct data *)data)->n;
-    double *xArray = ((struct data *)data)->x;
-
-    //double *sigma = ((struct data *) data)->sigma;
-    // f(x)=Go + A * e^(-B*x) * x^C
-    // df(x)/dA = e^(-B*x) * x^C
-    // df(x)/dB = A * x^C * (-x)*e^(-B*x)
-    // df(x)/dC = A * e^(-B*x) * x^C * log(x)
-    // df(x)/dGo = 1
     
+    double *xArray = ((struct data *)data)->x;   
     
     double A = gsl_vector_get (x, 1); // A
     double B = gsl_vector_get (x, 2); // B
@@ -72,7 +68,7 @@ gmodel_df (const gsl_vector * x, void *data,
         
         double t = xArray[i];
         double e = exp(-B*t)*pow(t,C);
-        //printf("t is %g and e is %g",t,e);
+        // zero is a special case since the log(0) is NaN.
         if (t==0) {
             gsl_matrix_set(J, i, 0, 1);
             gsl_matrix_set(J, i, 1, e);

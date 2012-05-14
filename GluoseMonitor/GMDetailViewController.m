@@ -29,7 +29,6 @@
 @synthesize activityIndicator;
 @synthesize range;
 @synthesize Go,A,B,C;
-@synthesize slope,intercept,accel,cubic,fourth,fifth;
 @synthesize graph;
 @synthesize dataForPlot;
 @synthesize bestFitDataForPlot;
@@ -71,6 +70,7 @@
 
 - (void)createGraph2 {
     // creates a graph of glucose readings vs fasting hours
+    
     self.graph = [[CPTXYGraph alloc] initWithFrame:CGRectZero];
 	CPTTheme *theme = [CPTTheme themeNamed:kCPTDarkGradientTheme];
 	[self.graph applyTheme:theme];
@@ -177,9 +177,7 @@
                 id y = r.level;
                 [contentArray addObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:x, @"x", y, @"y", nil]];
             } else {
-                //NSLog(@"Rejecting %@",r.description);
-                //NSLog(@"r.timeStamp = %@",r.timeStamp.description);
-                //NSLog(@"%f",[r.timeStamp timeIntervalSinceDate:[latestDate dateByAddingTimeInterval:(0.0 - self.range)]]);
+                // Don't add this item, it's out of range.
             }
         } else {
             id x = r.fastingHours;
@@ -191,7 +189,6 @@
     double bestFitY[120];
     double bestFitW[120];
     
-    //NSLog(@"%d points.",[contentArray count]);
 	self.dataForPlot = contentArray;
     int limit;		
     if ([contentArray count]>120) {
@@ -214,15 +211,14 @@
     self.A = [coefficients objectAtIndex:1];
     self.B = [coefficients objectAtIndex:2];
     self.C = [coefficients objectAtIndex:3];
-    //NSLog(@"Go is %g, A is %g, B is %g, C is %g",[self.Go doubleValue], [self.A doubleValue], [self.B doubleValue], [self.C doubleValue]);
     self.bestFitDataForPlot = [[NSMutableArray alloc] init];
     
     double maxYval = 0;
-    //double lastY;
     double filteredY[120];
     for (i=0;i<120;i++) {
         double xVal, yVal;
         xVal=i/10.0;
+        
         // f(x)=Go + A * e^(-B*x) * x^C
         double term2p1 = exp((-([self.B doubleValue]*xVal)));
         double term2p2 = pow(xVal, [self.C doubleValue]);
@@ -268,12 +264,6 @@
     } else {
         return;
     }
-    //NSTimeInterval startDateDifference = [firstReading.timeStamp timeIntervalSinceDate:_reading.timeStamp];
-    //NSTimeInterval endDateDifference = [lastReading.timeStamp timeIntervalSinceDate:_reading.timeStamp];
-    //double xAxisStart = startDateDifference;
-    //double xAxisEnd = endDateDifference - startDateDifference;
-    //double yAxisStart = 0;
-    //double yAxisEnd = 200;
 
     // Create graph from theme
 	self.graph = [[CPTXYGraph alloc] initWithFrame:CGRectZero];
@@ -310,15 +300,6 @@
     NSDateFormatter *df = [NSDateFormatter new];
     [df setDateFormat:@"mm/dd/yyyy - hh:mma"];
     self.title = [df stringFromDate:[_reading valueForKey:@"timeStamp"]];
-/*
-	NSArray *exclusionRanges = [NSArray arrayWithObjects:
-								[CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xAxisEnd-1) length:CPTDecimalFromFloat(1)],
-								[CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xAxisEnd/2-.5) length:CPTDecimalFromFloat(0.5)],
-								[CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(199) length:CPTDecimalFromFloat(2.0)],
-								nil];
- */
-	//x.labelExclusionRanges = exclusionRanges;
-
     
 	CPTXYAxis *y = axisSet.yAxis;
 	y.majorIntervalLength		  = CPTDecimalFromString(@"25");
@@ -354,12 +335,7 @@
 	// Add plot symbols
 	CPTMutableLineStyle *symbolLineStyle = [CPTMutableLineStyle lineStyle];
 	symbolLineStyle.lineColor = [CPTColor yellowColor];
-	/*CPTPlotSymbol *plotSymbol = [CPTPlotSymbol ellipsePlotSymbol];
-	plotSymbol.fill			 = [CPTFill fillWithColor:[CPTColor yellowColor]];
-	plotSymbol.lineStyle	 = symbolLineStyle;
-	plotSymbol.size			 = CGSizeMake(10.0, 10.0);
-	boundLinePlot.plotSymbol = plotSymbol;
-    */
+
 	// Create a green plot area
 	CPTScatterPlot *dataSourceLinePlot = [[CPTScatterPlot alloc] init];
 	lineStyle						 = [CPTMutableLineStyle lineStyle];
@@ -441,7 +417,7 @@
     self.title = [df stringFromDate:[_reading valueForKey:@"timeStamp"]];
     [_fastingTextField addTarget:self action:@selector(fastingFieldFinished:) forControlEvents:UIControlEventEditingDidEndOnExit];
     [_levelTextField addTarget:self action:@selector(levelFieldFinished:) forControlEvents:UIControlEventEditingDidEndOnExit];
-    //NSNumber *previousValue = [self previousValue];
+
     int levelValue = 0;
     levelValue = [_reading.level intValue];
     [_levelSlider setMinimumValue:[_reading.level floatValue] - 70];
@@ -452,7 +428,7 @@
     }
     _levelTextField.text = [NSString stringWithFormat:@"%.0f",[_reading.level floatValue]];
     
-    //NSLog(@"level value is %.1f",[[_reading valueForKey:@"level"] floatValue]);
+
     float fastLevel = [_reading.fastingHours floatValue];
     _fastingTextField.text = [NSString stringWithFormat:@"%.1f",fastLevel];
 
@@ -551,9 +527,9 @@
     }
     return [max floatValue];
 }
+
 - (NSString *)reportBody {
     NSString *report = [[NSString alloc] init];
-    //report = [report stringByAppendingFormat:@"<html><body><h2>Glucose Readings</h2>"];
     
     report = [report stringByAppendingFormat:@"<ul>"];
     float max = [self maxLevel];
@@ -561,7 +537,6 @@
     for (Reading *r in displayedPoints) {
         NSDateFormatter *df = [NSDateFormatter new];
         [df setDateFormat:@"M/dd - hh:mma"];
-        //self.title = [df stringFromDate:[_reading valueForKey:@"timeStamp"]];
 
         report = [report stringByAppendingFormat:@"<li>%@</li><ul><li>%.2f (mg/dL)</li><li>%.2f (hours)</li>",[df stringFromDate:[r valueForKey:@"timeStamp"]],[r.level floatValue],[[r fastingHours] floatValue]];
         if (r.notes) {
@@ -670,12 +645,8 @@
             readingsArray = [_readings mutableCopy];
             [readingsArray sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
             
-            ////NSLog(@"Readings is %@",readingsArray.description);
-            //NSLog(@"last reading is %@",[readingsArray lastObject]);
-            //NSLog(@"first reading is %@",[readingsArray objectAtIndex:0]);
-            
             self.range = [[[readingsArray objectAtIndex:0] timeStamp] timeIntervalSinceDate:[[readingsArray lastObject] timeStamp]];
-            //NSLog(@"Range is %f",self.range);
+
             [viewButton setTitle:@"All" forState:UIControlStateNormal];
         } else if ([viewButton.titleLabel.text isEqualToString:@"All"]) {
             self.range = 60*60*24*30;
@@ -700,7 +671,6 @@
 - (void)doneEditingNotes:(id)sender {
     [self.view endEditing:NO];
     _reading.notes = notesView.text;
-    //NSLog(@"_reading.notes is %@",_reading.notes);
     [notesView removeFromSuperview];
     [self.navigationItem setRightBarButtonItem:nil];
 }
@@ -714,30 +684,6 @@
     }
 }
 
-
-#pragma mark -
-#pragma mark Plot Data Source Methods
-/*
--(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot
-{
-    //NSLog(@"_readings count is %d",[_readings count]);
-    return [displayedPoints count];
-}
-
--(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index
-{
-    Reading *sample = [displayedPoints objectAtIndex:index];
-    if (fieldEnum == CPTScatterPlotFieldX) {
-        NSTimeInterval dateDifference = [sample.timeStamp timeIntervalSinceDate:referenceDate];
-        dateDifference = dateDifference/360;
-        //NSLog(@"returning %f",dateDifference);
-        return [NSNumber numberWithDouble:dateDifference];
-    } else {
-        //NSLog(@"returning %f",[sample.level floatValue]);
-        return sample.level;
-    }
-}
-*/
 
 #pragma mark -
 #pragma mark Plot Space Delegate Methods

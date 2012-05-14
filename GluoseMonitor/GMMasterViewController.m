@@ -1,9 +1,9 @@
 //
 //  GMMasterViewController.m
-//  GluoseMonitor
+//  Glucose Reader
 //
 //  Created by Michael Toth on 4/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Michael Toth. All rights reserved.
 //
 
 #import "GMMasterViewController.h"
@@ -72,29 +72,17 @@
     
     NSDateFormatter *df = [NSDateFormatter new];
     [df setDateFormat:@"MMMM dd, yyyy - hh:mma"];
-    //NSLog(@"Selected reading time stamp is %@",[df stringFromDate:_selectedReading.timeStamp]);
-    //_selectedReading.notes = @"Notes for %@",[df stringFromDate:_selectedReading.timeStamp];
-    
-    /*NSMutableArray *rds = [[NSMutableArray alloc] init];
-    rds = [_readings mutableCopy];
-    [rds addObject:_selectedReading];
-    _readings = rds;
-     */
+
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-        //NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Fatal Error" message:@"There was a problem saving your database context." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [av show];
         abort();
     }
     
     _readings = [self.fetchedResultsController fetchedObjects];
     
-    //NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    //NSArray *readings = [[self fetchedResultsController] fetchedObjects];
-    //Reading *reading = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    //_selectedReading = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
     [self.fetchedResultsController performFetch:&error];
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
@@ -133,9 +121,8 @@
         
         NSError *error = nil;
         if (![context save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            //NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Fatal Error" message:@"There was a problem saving your database context." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [av show];
             abort();
         }
     }   
@@ -167,13 +154,9 @@
             _selectedReading = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
         }
         
-        //NSLog(@"reading level is %f",[[_selectedReading valueForKey:@"level"] floatValue]);
         [[segue destinationViewController] setDelegate:self];
         [[segue destinationViewController] setReading:_selectedReading];
-        //NSLog(@"readings has %d objects.",[[self getReadings] count]);
         [[segue destinationViewController] setReadings:[self getReadings]];
-        //[[[[segue destinationViewController] navigationBar] backItem] setTitle:@"Back"];
-        //self.navigationController.navigationBar.backItem.title = @"Back";
         self.title = @"Back";
     }
 }
@@ -189,15 +172,15 @@
     _selectedReading.fastingHours = fasting;
 
     if (![self.fetchedResultsController.managedObjectContext save:&error]) {
-        //NSLog(@"Error saving in addReading");
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Fatal Error" message:@"There was a problem saving your database context." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [av show];
+        abort();
     }
-    //NSLog(@"Saving %f and %f (%f and %f)",[level floatValue],[fasting floatValue],[_selectedReading.level floatValue],[_selectedReading.fastingHours floatValue]);
 }
 
 
 -(NSArray *)getReadings {
     NSArray *readings = [[NSArray alloc] initWithArray:[[self fetchedResultsController] fetchedObjects]];
-    //NSLog(@"Readings has %d objects.",[readings count]);
     return readings;
 }
 
@@ -234,9 +217,8 @@
     
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-	    //NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Fatal Error" message:@"There was a problem saving your database context." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [av show];
 	    abort();
 	}
     
@@ -293,22 +275,12 @@
     [self.tableView endUpdates];
 }
 
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSError *error = nil;
     [self.fetchedResultsController performFetch:&error];
     NSArray *currentReadings = [self.fetchedResultsController fetchedObjects];
-    //NSLog(@"currentReadings has %d objects.",[currentReadings count]);
     Reading *selectedReading = [currentReadings objectAtIndex:[indexPath row]];
     
     NSDateFormatter *df = [NSDateFormatter new];
@@ -336,8 +308,7 @@
 
     chartLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
     
-    [cell.contentView addSubview:chartLabel];    //cell.textLabel.backgroundColor = [UIColor greenColor];
-    //cell.textLabel.text = [[reading valueForKey:@"timeStamp"] description];
+    [cell.contentView addSubview:chartLabel];    
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%d",
                                  [[selectedReading valueForKey:@"level"] intValue]];
 }

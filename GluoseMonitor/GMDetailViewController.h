@@ -41,7 +41,6 @@
 - (IBAction)editNotes:(id)sender;
 - (IBAction)changePlot:(id)sender;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, retain) NSNumber *slope,*intercept,*accel,*cubic,*fourth,*fifth;
 @property (nonatomic, retain) NSNumber *Go,*A,*B,*C;
 @property (strong, nonatomic) NSArray *readings;
 @property (weak, nonatomic) IBOutlet UIButton *emailButton;

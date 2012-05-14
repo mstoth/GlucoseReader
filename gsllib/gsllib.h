@@ -11,6 +11,6 @@
 
 @interface gsllib : NSObject
 
-- (NSArray *)getCubicCoefficients:(NSArray *)values num:(int)n;
+//- (NSArray *)getCubicCoefficients:(NSArray *)values num:(int)n;
 - (NSArray *)getParams:(NSArray *)values num:(int)n;
 @end

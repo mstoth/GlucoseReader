@@ -3,7 +3,7 @@
 //  gsllib
 //
 //  Created by Michael Toth on 4/18/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Michael Toth. All rights reserved.
 //
 
 #define NUM 120
@@ -58,18 +58,12 @@
     T = gsl_multifit_fdfsolver_lmsder;
     s = gsl_multifit_fdfsolver_alloc (T, n, p);
     gsl_multifit_fdfsolver_set (s, &f, &x.vector);
-    
-    print_state (iter, s);
-    
+        
     do
     {
         iter++;
         status = gsl_multifit_fdfsolver_iterate (s);
-        
-        //printf ("status = %s\n", gsl_strerror (status));
-        
-        print_state (iter, s);
-        
+                        
         if (status)
             break;
         
@@ -109,10 +103,9 @@
             [NSNumber numberWithDouble:C], nil];
 }
 
-
+// this function preceded the current model.  Not using it but keeping it for reference.
+/*
 - (NSArray *)getCubicCoefficients:(NSArray *)values num:(int)n {
-    //NSLog(@"In getCubicCoefficients");
-    // quadratic fit
     double xi, yi, ei, chisq;
     gsl_matrix *X, *cov;
     gsl_vector *y2, *w, *c;
@@ -162,19 +155,7 @@
             [NSNumber numberWithDouble:C(1)],
             [NSNumber numberWithDouble:C(0)], nil];
 }
-
-void
-print_state (size_t iter, gsl_multifit_fdfsolver * s)
-{
-    //printf ("iter: %3zu x = % 15.8f % 15.8f % 15.8f "
-            //"|f(x)| = %g\n",
-            //iter,
-            //gsl_vector_get (s->x, 0), 
-            //gsl_vector_get (s->x, 1),
-            //gsl_vector_get (s->x, 2), 
-            //gsl_blas_dnrm2 (s->f));
-}
-
+*/
 
 
 @end
