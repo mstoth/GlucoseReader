@@ -3,7 +3,7 @@
 //  GlucoseMonitor
 //
 //  Created by Michael Toth on 5/12/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Michael Toth. All rights reserved.
 //
 
 #ifndef GlucoseMonitor_gmodel_h

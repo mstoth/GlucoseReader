@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -82,43 +82,43 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="ttz-i8-xBU">
-                                <rect key="frame" x="5" y="78" width="37" height="37"/>
+                                <rect key="frame" x="5" y="54" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="ZYI-6p-iF0">
-                                <rect key="frame" x="31" y="59" width="271" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="Xo1-lq-Vfg">
-                                <rect key="frame" x="232" y="20" width="68" height="31"/>
+                                <rect key="frame" x="232" y="15" width="68" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="hideButtons:" destination="21" eventType="editingDidBegin" id="XbF-Qc-DHG"/>
+                                    <action selector="showButtons:" destination="21" eventType="editingDidEnd" id="89R-rG-tcD"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Glucose (mg/dL)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="egM-1k-Vgj">
-                                <rect key="frame" x="98" y="25" width="126" height="21"/>
+                                <rect key="frame" x="98" y="20" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hours Since Last Meal:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zHZ-NL-iDg">
-                                <rect key="frame" x="45" y="89" width="179" height="21"/>
+                                <rect key="frame" x="45" y="65" width="179" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="pE3-Vx-1l9">
-                                <rect key="frame" x="232" y="84" width="68" height="31"/>
+                                <rect key="frame" x="232" y="60" width="68" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="hideButtons:" destination="21" eventType="editingDidBegin" id="Olt-vf-DfW"/>
+                                    <action selector="showButtons:" destination="21" eventType="editingDidEnd" id="07X-wN-MeL"/>
+                                </connections>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Elp-9o-h3s">
-                                <rect key="frame" x="31" y="118" width="271" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VhH-Uu-1YI">
                                 <rect key="frame" x="242" y="148" width="58" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -185,7 +185,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dcw-Hb-VFv">
-                                <rect key="frame" x="20" y="14" width="72" height="37"/>
+                                <rect key="frame" x="20" y="9" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="View">
@@ -199,6 +199,13 @@
                                     <action selector="changePlot:" destination="21" eventType="touchUpInside" id="AHW-Fb-0cs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Having entries for different values helps curve fitting." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="g1X-AR-8nT">
+                                <rect key="frame" x="20" y="99" width="280" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -207,11 +214,11 @@
                         <outlet property="activityIndicator" destination="ttz-i8-xBU" id="wmC-ZJ-9YF"/>
                         <outlet property="dateButton" destination="A2u-bA-U1Q" id="f8h-yq-Nsd"/>
                         <outlet property="emailButton" destination="4cI-WT-eEj" id="2Zv-Ia-56h"/>
-                        <outlet property="fastingSlider" destination="Elp-9o-h3s" id="0rp-hZ-Hpl"/>
                         <outlet property="fastingTextField" destination="pE3-Vx-1l9" id="UvO-6l-G7C"/>
                         <outlet property="graphView" destination="hha-ch-V5B" id="c5z-D6-gyX"/>
-                        <outlet property="levelSlider" destination="ZYI-6p-iF0" id="LL1-MU-TzC"/>
+                        <outlet property="hintsLabel" destination="g1X-AR-8nT" id="gwD-7f-1kH"/>
                         <outlet property="levelTextField" destination="Xo1-lq-Vfg" id="otf-bz-JgU"/>
+                        <outlet property="notesButton" destination="ufZ-fK-8mP" id="fvs-yp-sEr"/>
                         <outlet property="saveButton" destination="VhH-Uu-1YI" id="pcS-Rk-09U"/>
                         <outlet property="viewButton" destination="Dcw-Hb-VFv" id="eT1-zF-6TF"/>
                     </connections>
@@ -220,41 +227,6 @@
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CPTGraphHostingView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPTGraphHostingView.h"/>
-        </class>
-        <class className="GMDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GMDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="changeDate:"/>
-                <relationship kind="action" name="changePlot:"/>
-                <relationship kind="action" name="editNotes:"/>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="action" name="sendData:"/>
-                <relationship kind="action" name="sendReportToDoctor:"/>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="dateButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="emailButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fastingSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="fastingTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="graphHost" candidateClass="CPTGraphHostingView"/>
-                <relationship kind="outlet" name="graphView" candidateClass="CPTGraphHostingView"/>
-                <relationship kind="outlet" name="hostView" candidateClass="CPTGraphHostingView"/>
-                <relationship kind="outlet" name="levelSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="levelTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="notesView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="viewButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="GMMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GMMasterViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

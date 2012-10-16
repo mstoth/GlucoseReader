@@ -7,14 +7,14 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "../../Downloads/gsl-1.15/sys/ldfrexp.c"
-         timestampString = "358661840.738716"
+         filePath = "GluoseMonitor/GMDetailViewController.m"
+         timestampString = "363700295.972422"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
-         landmarkName = "gsl_frexp()"
-         landmarkType = "7">
+         startingLineNumber = "582"
+         endingLineNumber = "582"
+         landmarkName = "-actionEmailComposer"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

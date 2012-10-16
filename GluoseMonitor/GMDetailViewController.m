@@ -28,6 +28,8 @@
 }
 @synthesize activityIndicator;
 @synthesize range;
+@synthesize hintsLabel;
+@synthesize notesButton;
 @synthesize Go,A,B,C;
 @synthesize graph;
 @synthesize dataForPlot;
@@ -216,12 +218,17 @@
     double maxYval = 0;
     double filteredY[120];
     for (i=0;i<120;i++) {
-        double xVal, yVal;
+        double xVal, yVal, term2p2;
         xVal=i/10.0;
         
         // f(x)=Go + A * e^(-B*x) * x^C
         double term2p1 = exp((-([self.B doubleValue]*xVal)));
-        double term2p2 = pow(xVal, [self.C doubleValue]);
+        if (xVal == 0.0) {
+            term2p2 = 0;
+        } else {
+            term2p2 = pow(xVal, [self.C doubleValue]);
+        }
+        
         yVal = [self.Go doubleValue] + ([self.A doubleValue] * term2p1 * term2p2);
         if (i==0) {
             filteredY[i]=yVal;
@@ -280,14 +287,15 @@
 	CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *)self.graph.defaultPlotSpace;
     plotSpace.delegate=self;
 	plotSpace.allowsUserInteraction = YES;
-	plotSpace.xRange				= [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(-2*60*60*24) length:CPTDecimalFromFloat(4*60*60*24)];
+	//plotSpace.xRange				= [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(-2*60*60*24) length:CPTDecimalFromFloat(4*60*60*24*7)];
+	plotSpace.xRange				= [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(-5*60*60*24) length:CPTDecimalFromFloat(10*60*60*24)];
 	plotSpace.yRange				= [CPTPlotRange plotRangeWithLocation:CPTDecimalFromDouble(-0.2*[self maxLevel]) length:CPTDecimalFromDouble([self maxLevel]+45.0)];
     
 
 	// Axes
 	CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.graph.axisSet;
 	CPTXYAxis *x		  = axisSet.xAxis;
-	x.majorIntervalLength		  = CPTDecimalFromFloat(60*60*24);
+	x.majorIntervalLength		  = CPTDecimalFromFloat(60*60*24*2);
 	x.orthogonalCoordinateDecimal = CPTDecimalFromFloat(0);
 	x.minorTicksPerInterval		  = 3;
     
@@ -430,7 +438,7 @@
     
 
     float fastLevel = [_reading.fastingHours floatValue];
-    _fastingTextField.text = [NSString stringWithFormat:@"%.1f",fastLevel];
+    _fastingTextField.text = [NSString stringWithFormat:@"%.0f",fastLevel];
 
     [_levelSlider setValue:levelValue];
     [_fastingSlider setValue:[[_reading valueForKey:@"fastingHours"] floatValue]];
@@ -470,6 +478,8 @@
     [self setEmailButton:nil];
     [self setViewButton:nil];
     [self setActivityIndicator:nil];
+    [self setNotesButton:nil];
+    [self setHintsLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
@@ -484,7 +494,7 @@
 - (void)fastingDidChange:(id)sender {
     //NSNumber *number = [NSNumber numberWithFloat:[_fastingSlider value]];
     float number = [_fastingSlider value];
-    _fastingTextField.text  = [NSString stringWithFormat:@"%.1f",number];
+    _fastingTextField.text  = [NSString stringWithFormat:@"%.0f",number];
     
 }
 - (void)levelDidChange:(id)sender {
@@ -554,8 +564,40 @@
 }
 
 -(IBAction) sendReportToDoctor:(id)sender {
-    [self sendEmailTo:@"" withSubject:@"Glucose Reading" withBody:[self reportBody]];
+    //[self sendEmailTo:@"" withSubject:@"Glucose Reading" withBody:[self reportBody]];
+    [self actionEmailComposer];
 }
+
+- (IBAction)actionEmailComposer {
+    NSMutableString *csvFileContents;
+    NSString *line;
+    NSDateFormatter *df = [NSDateFormatter new];
+    [df setDateFormat:@"M/dd - hh:mma"];
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc] init];
+        mailViewController.mailComposeDelegate = self;
+        [mailViewController setSubject:@"Glucose Readings"];
+        //[mailViewController setToRecipients:[NSArray arrayWithObject:@""]];
+        [mailViewController setMessageBody:[self reportBody] isHTML:YES];
+        NSString *path = NSHomeDirectory();
+        path = [path stringByAppendingPathComponent:@"Documents/glucose.csv"];
+        NSFileManager *fm = [NSFileManager defaultManager];
+        csvFileContents = [[NSMutableString alloc] init];
+        line = [[NSMutableString alloc] init];
+        line = [line stringByAppendingFormat:@"Date,Glucose Level (mg/dL),Fasting Hours,Notes\n"];
+        for (Reading *r in displayedPoints) {
+            if (r.notes == nil) {
+                r.notes = @"";
+            }
+            line = [line stringByAppendingFormat:@"%@,%.2f,%.2f,%@\n",[df stringFromDate:[r valueForKey:@"timeStamp"]],[r.level floatValue],[[r fastingHours] floatValue],[r notes]];
+
+        }
+        [fm createFileAtPath:path contents:[line dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+        [mailViewController addAttachmentData:[line dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/csv" fileName:[path lastPathComponent]];
+        [self presentModalViewController:mailViewController animated:YES];       
+    }
+}
+
 
 -(void) sendEmailTo:(NSString *)to withSubject:(NSString *)subject withBody:(NSString *)body {
     NSString *mailString = [NSString stringWithFormat:@"mailto:?to=%@&subject=%@&body=%@",
@@ -563,6 +605,14 @@
                             [subject stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding],
                             [body stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mailString]];
+}
+
+-(void)mailComposeController:(MFMailComposeViewController*)controller 
+         didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+    NSString *path = NSHomeDirectory();
+    path = [path stringByAppendingPathComponent:@"Documents/glucose.csv"];
+    [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
+    [controller dismissModalViewControllerAnimated:YES];
 }
 
 
@@ -574,6 +624,9 @@
     [self.view endEditing:YES];
     if ([self.dateButton.titleLabel.text isEqualToString:@"Done"]) {
         [self.dateButton setTitle:@"Date" forState:UIControlStateNormal];
+        [self showButtons:nil];
+        self.levelTextField.enabled = YES;
+        self.fastingTextField.enabled = YES;
         BOOL found = false;
         for (UIView *subview in [self.view subviews]) {
             if (subview.tag == 100){
@@ -587,6 +640,10 @@
         [self.saveButton setEnabled:true];
         [self.saveButton setHidden:false];
     } else {
+        [self hideButtons:nil];
+        self.dateButton.hidden = NO;
+        self.levelTextField.enabled = NO;
+        self.fastingTextField.enabled = NO;
         [self.dateButton setTitle:@"Done" forState:UIControlStateNormal];
         datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 200, 325, 250)];
         datePicker.datePickerMode = UIDatePickerModeDateAndTime;
@@ -613,15 +670,38 @@
 - (IBAction)sendData:(id)sender {
 }
 
+- (IBAction)hideButtons:(id)sender {
+    self.notesButton.hidden = YES;
+    self.emailButton.hidden = YES;
+    self.viewButton.hidden = YES;
+    self.dateButton.hidden = YES;
+}
+
+- (IBAction)showButtons:(id)sender {
+    self.notesButton.hidden = NO;
+    self.emailButton.hidden = NO;
+    self.viewButton.hidden = NO;
+    self.dateButton.hidden = NO;
+}
+
 - (void)levelFieldFinished:(id)sender {
     [sender resignFirstResponder];
 }
 - (void)fastingFieldFinished:(id)sender {
+    
     [sender resignFirstResponder];
 }
 - (void)textViewDidEndEditing:(UITextView *)textView {
     [textView resignFirstResponder];
 }
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@","]) {
+        return NO;
+    }
+    return YES;
+}
+
 
 - (IBAction)editNotes:(id)sender {
     notesView = [[UITextView alloc] initWithFrame:CGRectMake(4, 4, 312, 184)];
@@ -635,6 +715,7 @@
     //self.navigationController.navigationItem.rightBarButtonItem = doneButton;
     
 }
+
 
 - (IBAction)changePlot:(id)sender {
     [self.activityIndicator startAnimating];
@@ -675,6 +756,7 @@
     [self.navigationItem setRightBarButtonItem:nil];
 }
 
+
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (textField == _levelTextField) {
         [_levelSlider setValue:[_levelTextField.text floatValue]];
@@ -707,7 +789,13 @@
                                     [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(-30) length:CPTDecimalFromFloat(29)],
                                     nil];
         y.labelExclusionRanges = exclusionRanges;
-
+        double newLocation = newRange.locationDouble;
+        
+        NSLog(@"newLocation is %f",newLocation);
+        double newLength = newRange.lengthDouble;
+        newLocation = newLocation + newLength/2;
+        y.orthogonalCoordinateDecimal = CPTDecimalFromDouble(newLocation);
+        
         [self.graph.axisSet setAxes:[NSArray arrayWithObjects:x,y, nil]];
     } 
     return newRange;

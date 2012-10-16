@@ -42,6 +42,7 @@
 		A48C3468152F83BA006CD385 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C3467152F83BA006CD385 /* libCorePlot-CocoaTouch.a */; };
 		A48C3469152F83BA006CD385 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C3467152F83BA006CD385 /* libCorePlot-CocoaTouch.a */; };
 		A48C346B152F84FE006CD385 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C346A152F84FE006CD385 /* QuartzCore.framework */; };
+		A4E4F85E15AD911F003F4CCC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F85D15AD911F003F4CCC /* MessageUI.framework */; };
 		A4EC24E1153F8697007C07AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33B4152E7F89006CD385 /* Foundation.framework */; };
 		A4EC24EE153F8697007C07AD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33D8152E7F8D006CD385 /* SenTestingKit.framework */; };
 		A4EC24EF153F8697007C07AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33B2152E7F89006CD385 /* UIKit.framework */; };
@@ -1151,6 +1152,7 @@
 		A48C3466152F8163006CD385 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
 		A48C3467152F83BA006CD385 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 		A48C346A152F84FE006CD385 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A4E4F85D15AD911F003F4CCC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A4EC24E0153F8696007C07AD /* libgsllib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgsllib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EC24E4153F8697007C07AD /* gsllib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gsllib-Prefix.pch"; sourceTree = "<group>"; };
 		A4EC24E5153F8697007C07AD /* gsllib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gsllib.h; sourceTree = "<group>"; };
@@ -2895,6 +2897,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E4F85E15AD911F003F4CCC /* MessageUI.framework in Frameworks */,
 				A4EC2503153FB9FC007C07AD /* libgsllib.a in Frameworks */,
 				A48C346B152F84FE006CD385 /* QuartzCore.framework in Frameworks */,
 				A48C33B3152E7F89006CD385 /* UIKit.framework in Frameworks */,
@@ -3484,6 +3487,7 @@
 		A48C33B1152E7F89006CD385 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4E4F85D15AD911F003F4CCC /* MessageUI.framework */,
 				A48C346A152F84FE006CD385 /* QuartzCore.framework */,
 				A48C33B2152E7F89006CD385 /* UIKit.framework */,
 				A48C33B4152E7F89006CD385 /* Foundation.framework */,
@@ -6430,7 +6434,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6451,7 +6455,7 @@
 					"-lgsl",
 					"-lgslcblas",
 				);
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "~/Downloads/gsl-1.15/multifit";
 			};
@@ -6463,7 +6467,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -6474,7 +6478,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "~/Downloads/gsl-1.15/.libs";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "~/Downloads/gsl-1.15/multifit";
 				VALIDATE_PRODUCT = YES;
@@ -6484,7 +6488,7 @@
 		A48C33EB152E7F8E006CD385 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GluoseMonitor/GlucoseMonitor-Prefix.pch";
@@ -6499,7 +6503,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = GlucoseMonitor;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
 				USER_HEADER_SEARCH_PATHS = "~/Documents/gsl-1.15/multifit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -6508,7 +6512,7 @@
 		A48C33EC152E7F8E006CD385 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GluoseMonitor/GlucoseMonitor-Prefix.pch";
@@ -6523,7 +6527,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = GlucoseMonitor;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
 				USER_HEADER_SEARCH_PATHS = "~/Documents/gsl-1.15/multifit";
 				WRAPPER_EXTENSION = app;
 			};

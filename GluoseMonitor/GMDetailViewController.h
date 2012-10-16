@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "DisplayView.h"
 #import "CorePlot-CocoaTouch.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 //#import "GMMasterViewController.h"
 #import "Reading.h"
 
 @protocol GMDetailViewDelegate;
 
-@interface GMDetailViewController : UIViewController <CPTLegendDelegate, UITextViewDelegate, CPTPlotDataSource,UITextFieldDelegate,UIPickerViewDelegate, CPTPlotSpaceDelegate> {
+@interface GMDetailViewController : UIViewController <CPTLegendDelegate, UITextViewDelegate, CPTPlotDataSource,UITextFieldDelegate,UIPickerViewDelegate, CPTPlotSpaceDelegate, MFMailComposeViewControllerDelegate> {
 	IBOutlet CPTGraphHostingView *hostView;
 	NSArray *plotData;
 	CPTFill *areaFill;
@@ -26,6 +28,8 @@
 }
 @property (nonatomic) NSTimeInterval range; 
 
+@property (weak, nonatomic) IBOutlet UILabel *hintsLabel;
+@property (weak, nonatomic) IBOutlet UIButton *notesButton;
 @property (nonatomic, retain) CPTXYGraph *graph;
 @property (nonatomic, retain) IBOutlet CPTGraphHostingView *graphHost;
 @property (nonatomic, retain) NSMutableArray *dataForPlot;
@@ -39,7 +43,9 @@
 - (IBAction)changeDate:(id)sender;
 - (IBAction)sendData:(id)sender;
 - (IBAction)editNotes:(id)sender;
+- (IBAction)showButtons:(id)sender;
 - (IBAction)changePlot:(id)sender;
+- (IBAction)hideButtons:(id)sender;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, retain) NSNumber *Go,*A,*B,*C;
 @property (strong, nonatomic) NSArray *readings;
