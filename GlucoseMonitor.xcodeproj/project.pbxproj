@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40B111E1634A6E700753DEF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B111D1634A6E700753DEF /* Default-568h@2x.png */; };
+		A40B113B1634CEC100753DEF /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40B11351634C52700753DEF /* libCorePlot-CocoaTouch.a */; };
+		A4675A8A162E020E006E5F50 /* GMDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4675A89162E020E006E5F50 /* GMDataViewController.m */; };
 		A4676FC51533C32A0030124F /* Reading.m in Sources */ = {isa = PBXBuildFile; fileRef = A4676FC41533C32A0030124F /* Reading.m */; };
 		A4676FD2153421320030124F /* flare.png in Resources */ = {isa = PBXBuildFile; fileRef = A4676FD1153421320030124F /* flare.png */; };
 		A4676FD415352B690030124F /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = A4676FD315352B690030124F /* iTunesArtwork */; };
 		A4676FDE15352FBC0030124F /* glucoseicon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = A4676FDD15352FBB0030124F /* glucoseicon57x57.png */; };
 		A4676FE015352FC50030124F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4676FDF15352FC50030124F /* Default@2x.png */; };
+		A47B7D0916397504003C576C /* File in Resources */ = {isa = PBXBuildFile; fileRef = A47B7D0816397504003C576C /* File */; };
 		A48C33B3152E7F89006CD385 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33B2152E7F89006CD385 /* UIKit.framework */; };
 		A48C33B5152E7F89006CD385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33B4152E7F89006CD385 /* Foundation.framework */; };
 		A48C33B7152E7F8A006CD385 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33B6152E7F89006CD385 /* CoreGraphics.framework */; };
@@ -39,8 +43,6 @@
 		A48C3410152E8F75006CD385 /* ECGraphLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A48C3408152E8F75006CD385 /* ECGraphLine.m */; };
 		A48C3411152E8F75006CD385 /* ECGraphPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A48C340A152E8F75006CD385 /* ECGraphPoint.m */; };
 		A48C3412152E8F75006CD385 /* ECGraphPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A48C340A152E8F75006CD385 /* ECGraphPoint.m */; };
-		A48C3468152F83BA006CD385 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C3467152F83BA006CD385 /* libCorePlot-CocoaTouch.a */; };
-		A48C3469152F83BA006CD385 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C3467152F83BA006CD385 /* libCorePlot-CocoaTouch.a */; };
 		A48C346B152F84FE006CD385 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C346A152F84FE006CD385 /* QuartzCore.framework */; };
 		A4E4F85E15AD911F003F4CCC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E4F85D15AD911F003F4CCC /* MessageUI.framework */; };
 		A4EC24E1153F8697007C07AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48C33B4152E7F89006CD385 /* Foundation.framework */; };
@@ -1015,6 +1017,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A40B11341634C52700753DEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A40B112B1634C52700753DEF /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
 		A48C33DD152E7F8D006CD385 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A48C33A5152E7F89006CD385 /* Project object */;
@@ -1032,12 +1041,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40B111D1634A6E700753DEF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A40B112B1634C52700753DEF /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		A4675A88162E020E006E5F50 /* GMDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMDataViewController.h; sourceTree = "<group>"; };
+		A4675A89162E020E006E5F50 /* GMDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMDataViewController.m; sourceTree = "<group>"; };
 		A4676FC31533C32A0030124F /* Reading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reading.h; sourceTree = "<group>"; };
 		A4676FC41533C32A0030124F /* Reading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reading.m; sourceTree = "<group>"; };
 		A4676FD1153421320030124F /* flare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flare.png; sourceTree = "<group>"; };
 		A4676FD315352B690030124F /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		A4676FDD15352FBB0030124F /* glucoseicon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glucoseicon57x57.png; sourceTree = "<group>"; };
 		A4676FDF15352FC50030124F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A47B7D0816397504003C576C /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		A48C33AE152E7F89006CD385 /* GlucoseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlucoseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48C33B2152E7F89006CD385 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A48C33B4152E7F89006CD385 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2897,6 +2911,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40B113B1634CEC100753DEF /* libCorePlot-CocoaTouch.a in Frameworks */,
 				A4E4F85E15AD911F003F4CCC /* MessageUI.framework in Frameworks */,
 				A4EC2503153FB9FC007C07AD /* libgsllib.a in Frameworks */,
 				A48C346B152F84FE006CD385 /* QuartzCore.framework in Frameworks */,
@@ -2904,7 +2919,6 @@
 				A48C33B5152E7F89006CD385 /* Foundation.framework in Frameworks */,
 				A48C33B7152E7F8A006CD385 /* CoreGraphics.framework in Frameworks */,
 				A48C33B9152E7F8A006CD385 /* CoreData.framework in Frameworks */,
-				A48C3468152F83BA006CD385 /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2916,7 +2930,6 @@
 				A48C33DA152E7F8D006CD385 /* UIKit.framework in Frameworks */,
 				A48C33DB152E7F8D006CD385 /* Foundation.framework in Frameworks */,
 				A48C33DC152E7F8D006CD385 /* CoreData.framework in Frameworks */,
-				A48C3469152F83BA006CD385 /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3454,9 +3467,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40B112C1634C52700753DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A40B11351634C52700753DEF /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A48C33A3152E7F89006CD385 = {
 			isa = PBXGroup;
 			children = (
+				A47B7D0816397504003C576C /* File */,
+				A40B111D1634A6E700753DEF /* Default-568h@2x.png */,
 				A4EC31C21540A5FD007C07AD /* Default.png */,
 				A4676FDF15352FC50030124F /* Default@2x.png */,
 				A4EC31BF1540A55C007C07AD /* default.png */,
@@ -3470,6 +3493,7 @@
 				A4EC24F4153F8697007C07AD /* gsllibTests */,
 				A48C33B1152E7F89006CD385 /* Frameworks */,
 				A48C33AF152E7F89006CD385 /* Products */,
+				A40B112B1634C52700753DEF /* CorePlot-CocoaTouch.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3505,6 +3529,8 @@
 				A48C33C3152E7F8B006CD385 /* GMAppDelegate.h */,
 				A48C33C4152E7F8B006CD385 /* GMAppDelegate.m */,
 				A48C33C6152E7F8B006CD385 /* MainStoryboard.storyboard */,
+				A4675A88162E020E006E5F50 /* GMDataViewController.h */,
+				A4675A89162E020E006E5F50 /* GMDataViewController.m */,
 				A48C33CC152E7F8C006CD385 /* GMMasterViewController.h */,
 				A48C33CD152E7F8C006CD385 /* GMMasterViewController.m */,
 				A48C33CF152E7F8C006CD385 /* GMDetailViewController.h */,
@@ -5982,6 +6008,12 @@
 			mainGroup = A48C33A3152E7F89006CD385;
 			productRefGroup = A48C33AF152E7F89006CD385 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A40B112C1634C52700753DEF /* Products */;
+					ProjectRef = A40B112B1634C52700753DEF /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A48C33AD152E7F89006CD385 /* GlucoseMonitor */,
@@ -5991,6 +6023,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A40B11351634C52700753DEF /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = A40B11341634C52700753DEF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A48C33AC152E7F89006CD385 /* Resources */ = {
@@ -6008,6 +6050,8 @@
 				A4EC31C31540A600007C07AD /* Default.png in Resources */,
 				A4EC31C61540AAB5007C07AD /* Icon@2x.png in Resources */,
 				A4EC31C81540AAC2007C07AD /* Icon.png in Resources */,
+				A40B111E1634A6E700753DEF /* Default-568h@2x.png in Resources */,
+				A47B7D0916397504003C576C /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6074,6 +6118,7 @@
 				A48C340F152E8F75006CD385 /* ECGraphLine.m in Sources */,
 				A48C3411152E8F75006CD385 /* ECGraphPoint.m in Sources */,
 				A4676FC51533C32A0030124F /* Reading.m in Sources */,
+				A4675A8A162E020E006E5F50 /* GMDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6434,28 +6479,25 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "~/Downloads/gsl-1.15/multifit";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = "~/Downloads/gsl-1.15/.libs";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-lgsl",
 					"-lgslcblas",
 				);
-				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "~/Downloads/gsl-1.15/multifit";
 			};
@@ -6467,7 +6509,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -6475,10 +6517,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "~/Downloads/gsl-1.15/multifit";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = "~/Downloads/gsl-1.15/.libs";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
+				"OTHER_LDFLAGS[arch=*]" = "";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "~/Downloads/gsl-1.15/multifit";
 				VALIDATE_PRODUCT = YES;
@@ -6488,22 +6531,25 @@
 		A48C33EB152E7F8E006CD385 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GluoseMonitor/GlucoseMonitor-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = "~/Documents/gsl-1.15/multifit";
 				INFOPLIST_FILE = "GluoseMonitor/GlucoseMonitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/GluoseMonitor\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 				);
 				PRODUCT_NAME = GlucoseMonitor;
-				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "~/Documents/gsl-1.15/multifit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -6512,22 +6558,25 @@
 		A48C33EC152E7F8E006CD385 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Toth (Z2X5TZNEHK)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GluoseMonitor/GlucoseMonitor-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = "~/Documents/gsl-1.15/multifit";
 				INFOPLIST_FILE = "GluoseMonitor/GlucoseMonitor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/GluoseMonitor\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 				);
 				PRODUCT_NAME = GlucoseMonitor;
-				PROVISIONING_PROFILE = "331AB9EA-92C8-4C0F-9ED2-9381A82CCD20";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "~/Documents/gsl-1.15/multifit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -6601,7 +6650,7 @@
 					"\"$(SRCROOT)/../../Downloads/gsl-1.15/sys/.libs\"",
 					"\"$(SRCROOT)/../../Downloads/gsl-1.15/rng/.libs\"",
 				);
-				OTHER_LDFLAGS = "-lgsllib.a";
+				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -6635,7 +6684,7 @@
 					"\"$(SRCROOT)/../../Downloads/gsl-1.15/sys/.libs\"",
 					"\"$(SRCROOT)/../../Downloads/gsl-1.15/rng/.libs\"",
 				);
-				OTHER_LDFLAGS = "-lgsllib.a";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";

@@ -7,6 +7,7 @@
 //
 
 #import "GMDetailViewController.h"
+#import "GMDataViewController.h"
 #import "CorePlot-CocoaTouch.h"
 #import "DisplayView.h"
 #import "gsllib.h"
@@ -50,6 +51,14 @@
 @synthesize graphHost;
 @synthesize datePicker;
 @synthesize notesView;
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    GMDataViewController *dataViewController = [segue destinationViewController];
+    dataViewController.reading = _reading;
+    dataViewController.readings = self.readings;
+}
+
 
 #pragma mark - Managing the detail item
 
@@ -480,6 +489,7 @@
     [self setActivityIndicator:nil];
     [self setNotesButton:nil];
     [self setHintsLabel:nil];
+    [self setHintsLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;
@@ -594,7 +604,8 @@
         }
         [fm createFileAtPath:path contents:[line dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
         [mailViewController addAttachmentData:[line dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/csv" fileName:[path lastPathComponent]];
-        [self presentModalViewController:mailViewController animated:YES];       
+        [self presentViewController:mailViewController animated:YES completion:nil];
+        // deprecated [self presentModalViewController:mailViewController animated:YES];
     }
 }
 
@@ -612,7 +623,8 @@
     NSString *path = NSHomeDirectory();
     path = [path stringByAppendingPathComponent:@"Documents/glucose.csv"];
     [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
-    [controller dismissModalViewControllerAnimated:YES];
+    
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -791,7 +803,7 @@
         y.labelExclusionRanges = exclusionRanges;
         double newLocation = newRange.locationDouble;
         
-        NSLog(@"newLocation is %f",newLocation);
+        //NSLog(@"newLocation is %f",newLocation);
         double newLength = newRange.lengthDouble;
         newLocation = newLocation + newLength/2;
         y.orthogonalCoordinateDecimal = CPTDecimalFromDouble(newLocation);

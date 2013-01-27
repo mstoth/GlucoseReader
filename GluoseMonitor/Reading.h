@@ -16,5 +16,5 @@
 @property (nonatomic, retain) NSNumber * level;
 @property (nonatomic, retain) NSDate * timeStamp;
 @property (nonatomic, retain) NSString * notes;
-
+-(NSInteger)timeOfDay;
 @end

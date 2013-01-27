@@ -9,6 +9,8 @@
 #import "ECGraph.h"
 #import <time.h>
 #import <mach/mach_time.h>
+#import <UIKit/UIKit.h>
+
 
 #define XAXIS_OFFSET 30
 #define YAXIS_OFFSET 30
@@ -233,14 +235,14 @@ static inline double radians(double degrees){
 	[color set];
 	UILabel *lb_xaxisTitle = [[UILabel alloc] initWithFrame:CGRectMake(_xaxisStart.x , _xaxisStart.y + 20 , _xaxisLength, 18)];
 	lb_xaxisTitle.text = _xaxisTitle;
-	lb_xaxisTitle.textAlignment = UITextAlignmentCenter;
+	lb_xaxisTitle.textAlignment = kCTCenterTextAlignment;
 	lb_xaxisTitle.backgroundColor = [UIColor clearColor];
 	lb_xaxisTitle.font = [UIFont boldSystemFontOfSize:13];
 	[ECCAST(UIView,_delegate) addSubview:lb_xaxisTitle];
 	
 	UILabel *lb_yaxisTitle = [[UILabel alloc] initWithFrame:CGRectMake(_xaxisStart.x - _yaxisLength/2 - 30, _yaxisEnd.y + _yaxisLength/2 , _yaxisLength, 18)];
 	lb_yaxisTitle.text = _yaxisTitle;
-	lb_yaxisTitle.textAlignment = UITextAlignmentCenter;
+	lb_yaxisTitle.textAlignment = kCTCenterTextAlignment;
 	lb_yaxisTitle.backgroundColor = [UIColor clearColor];
 	lb_yaxisTitle.font = [UIFont boldSystemFontOfSize:13];
 	lb_yaxisTitle.transform = CGAffineTransformMakeRotation(-1.57);
@@ -248,7 +250,7 @@ static inline double radians(double degrees){
 	
 	UILabel *lb_graphicTitle = [[UILabel alloc] initWithFrame:CGRectMake(_xaxisStart.x , _yaxisEnd.y - 20  , _xaxisLength, 18)];
 	lb_graphicTitle.text = _graphicTitle;
-	lb_graphicTitle.textAlignment = UITextAlignmentCenter;
+	lb_graphicTitle.textAlignment = kCTCenterTextAlignment;
 	lb_graphicTitle.backgroundColor = [UIColor clearColor];
 	lb_graphicTitle.font = [UIFont boldSystemFontOfSize:13];
 	[ECCAST(UIView,_delegate) addSubview:lb_graphicTitle];
